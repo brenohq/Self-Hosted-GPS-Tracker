@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iTracker</string>
+    
+    <string name="button_toggle">RASTREAR!</string>
+    
+    <string name="desc_logo">Logo</string>
+    
+    <string name="hint_url">http(s)://servidor/caminho</string>
+
+    <string name="invalid_number">Número inválido!</string>
+
+    <string name="menu_settings">Configurações</string>
+    
+    <string name="pref_gps_updates">Atualização do GPS (segundos)</string>
+    <string name="pref_gps_updates_summary">Freq de atualização… (5 segundos no mínimo)</string>
+    <string name="pref_gps_updates_too_low">Desculpe, esse valor é muito baixo.</string>
+    <string name="pref_gps_updates_too_high">Valor maior do que o permitido.</string>
+    <string name="pref_battery_drain">Atenção! Valores abaixo de 30 segundos podem drenar sua bateria!.</string>
+
+    <string name="pref_max_run_time">Tempo máximo de execução (horas)</string>
+    <string name="pref_max_run_time_summary">(Padrão de 8 horas)</string>
+    <string name="pref_max_run_time_too_low">Desculpe, esse valor é menor que o esperado!</string>
+
+    <string name="pref_timestamp">Timestamp on each request</string>
+    <string name="pref_timestamp_summary">Add t=(milliseconds) to the parameters</string>
+    
+    <string name="text_legend_url_0">Enviar posicionamento para: </string>
+    <string name="text_legend_url_1">Exemplo: http://brenohq.com/server/gps.php</string>
+    <string name="text_legend_url_2">Latitude e Longitude adicionadas automaticamente</string>
+    <string name="text_legend_url_3">em http://brenohq.com/server/gps.php?lat=…&amp;lon=…</string>
+    
+    <string name="text_network_status">Status de rede: Desconhecido!</string>
+    <string name="text_network_status_enabled">Rede Habilitada!</string>
+    <string name="text_network_status_disabled">Rede Desabilitada!</string>
+    
+    <string name="text_gps_status">Status de GPS: Desconhecido!</string>
+    <string name="text_gps_status_enabled">GPS Ativado!</string>
+    <string name="text_gps_status_disabled">GPS Desabilitado!</string>
+    
+    <string name="text_running_since">Executando desde:</string>
+    <string name="text_stopped_on">Parado em: </string>
+    <string name="text_killed">Android matou a aplicação!</string>
+    
+    <string name="toast_service_running">Rastreamento Ligado!</string>
+    <string name="toast_service_stopped">Rastreamento Desligado!</string>
+    <string name="toast_prefs_restart">Não se esqueça de re-ativar o rastreamento!</string>
+
+    <string name="waiting_for_gps_data">Buscando Informaçoes de Localização</string>
+    <string name="last_location_sent_at">Última Localização Enviada em: </string>
+    <string name="http_request_ok">OK</string>
+    <string name="http_request_failed">Falhou</string>
+
+    <string name="error_malformed_url">URL Inválida</string>
+    <string name="error_unknown_host">Host Desconhecido ou Internet DOWN!</string>
+    <string name="error_ssl">Problema de Conexão HTTPS</string>
+    <string name="error_timeout">HTTP Timeout</string>
+
+</resources>

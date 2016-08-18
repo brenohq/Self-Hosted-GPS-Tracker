@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">137150467191-hs1su9pcd9nvhb82d1lld48vm357i8qp.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://itracker-663bb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">137150467191</string>
+    <string name="google_api_key" translatable="false">AIzaSyDutMc5uI_6j7oR3Fmi8NgAXdPFVpwSXac</string>
+    <string name="google_app_id" translatable="false">1:137150467191:android:c51a2089fa16e5df</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDutMc5uI_6j7oR3Fmi8NgAXdPFVpwSXac</string>
+    <string name="google_storage_bucket" translatable="false">itracker-663bb.appspot.com</string>
+</resources>

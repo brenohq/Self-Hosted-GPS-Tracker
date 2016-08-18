@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "137150467191",
+    "firebase_url": "https://itracker-663bb.firebaseio.com",
+    "project_id": "itracker-663bb",
+    "storage_bucket": "itracker-663bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137150467191:android:326d4ead967c96d3",
+        "android_client_info": {
+          "package_name": "com.rdc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137150467191-hs1su9pcd9nvhb82d1lld48vm357i8qp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDutMc5uI_6j7oR3Fmi8NgAXdPFVpwSXac"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137150467191:android:c51a2089fa16e5df",
+        "android_client_info": {
+          "package_name": "fr.herverenault.selfhostedgpstracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137150467191-hs1su9pcd9nvhb82d1lld48vm357i8qp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDutMc5uI_6j7oR3Fmi8NgAXdPFVpwSXac"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

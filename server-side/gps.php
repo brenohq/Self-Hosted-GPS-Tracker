@@ -1,8 +1,5 @@
 <?php
 
-// THIS IS ONLY A SAMPLE SCRIPT. PLEASE TWEAK IT TO YOUR NEEDS.
-// IT COMES WITH NO WARRANTY WHATSOEVER. 
-
 $file = "/tmp/gps-position.txt"; // you might save in a database instead...
 
 if (isset($_GET["lat"]) && preg_match("/^-?\d+\.\d+$/", $_GET["lat"])
@@ -24,5 +21,5 @@ if (isset($_GET["lat"]) && preg_match("/^-?\d+\.\d+$/", $_GET["lat"])
     echo "OK";
 } else {
     header('HTTP/1.0 400 Bad Request');
-    echo 'Please type this URL in the <a href="https://play.google.com/store/apps/details?id=fr.herverenault.selfhostedgpstracker">Self-Hosted GPS Tracker</a> Android app on your phone.';
+    echo 'Copie essa URL para o campo no aplicativo iTracker e clique <a target="_blank" href="http://www.brenohq.com/server/i-am-here.html">aqui</a> para saber suas últimas coordenadas.';
 }

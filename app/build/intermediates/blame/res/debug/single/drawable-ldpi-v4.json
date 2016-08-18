@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_launcher.png",
+        "source": "/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/res/drawable-ldpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_notif.png",
+        "source": "/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/res/drawable-ldpi/ic_notif.png"
+    },
+    {
+        "merged": "/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/common_ic_googleplayservices.png",
+        "source": "/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/res/drawable-ldpi-v4/common_ic_googleplayservices.png"
+    }
+]
