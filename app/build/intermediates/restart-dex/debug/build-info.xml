@@ -4,31 +4,26 @@
     api-level="21"
     density="xxhdpi"
     format="7"
-    timestamp="18657624442942"
+    timestamp="1163302027352"
     token="2732406494470509723" >
 
     <task
         name="javac"
-        duration="79" />
+        duration="1238" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="17" />
+        duration="72" />
     <task
         name="verifier"
-        duration="1" />
+        duration="45" />
 
     <artifact
-        location="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-        type="DEX" />
+        location="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="18524126791394" >
-        <artifact
-            location="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/outputs/apk/app-debug.apk"
-            type="MAIN" />
-    </build>
     <build timestamp="18657624442942" >
         <artifact
             location="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
