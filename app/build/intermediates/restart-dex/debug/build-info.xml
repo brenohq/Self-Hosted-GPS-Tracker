@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86_64,x86"
-    api-level="22"
-    density="xhdpi"
+    abi="armeabi-v7a,armeabi"
+    api-level="21"
+    density="xxhdpi"
     format="7"
-    timestamp="15967005666325"
+    timestamp="17392825610584"
     token="2732406494470509723" >
 
     <task
@@ -20,11 +20,11 @@
         name="verifier"
         duration="0" />
 
-    <build timestamp="15947353668823" >
+    <build timestamp="17141480216353" >
         <artifact
             location="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="15967005666325" />
+    <build timestamp="17392825610584" />
 
 </instant-run>
