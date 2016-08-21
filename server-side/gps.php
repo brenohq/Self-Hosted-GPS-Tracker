@@ -1,6 +1,8 @@
 <?php
 
-$file = "/tmp/gps-position.txt"; // you might save in a database instead...
+// Salvando em arquivo, porém é perfeitamente possível salvar em um DB.
+
+$file = "/tmp/gps-position.txt";
 
 if (isset($_GET["lat"]) && preg_match("/^-?\d+\.\d+$/", $_GET["lat"])
     && isset($_GET["lon"]) && preg_match("/^-?\d+\.\d+$/", $_GET["lon"]) ) {
@@ -14,10 +16,8 @@ if (isset($_GET["lat"]) && preg_match("/^-?\d+\.\d+$/", $_GET["lat"])
         fwrite($fh, $_GET["t"]);
     }
     fclose($fh);
-    // you should obviously do your own checks before this...
     echo "OK";
 } elseif (isset($_GET["tracker"])) {
-    // do whatever you want here...
     echo "OK";
 } else {
     header('HTTP/1.0 400 Bad Request');

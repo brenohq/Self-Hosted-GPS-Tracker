@@ -1,2 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="ea4b54dcbfe5ac05efb0a314105f07258118d3a7">
+        <dex dex="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.0.0_9e23989b9292c06a1d053eb1ea7ba58a27ec52d6/classes.dex" />
+    </item>
+    <item
+        jar="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="0dc8ab07eeceda5e99b305c8069765056b6e5c9d">
+        <dex dex="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.0.0_42266d8b27891830965e5da29625d8409d580dcb/classes.dex" />
+    </item>
+    <item
+        jar="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="42df48c7305b08b14fa0e84561091b0c24d70d26">
+        <dex dex="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.0.0_7bc42e40b36441b83e5db0f385dd161e5677b6d3/classes.dex" />
+    </item>
+    <item
+        jar="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="4ef8ab5fee042023018249474bc93bd4b2b9c17e">
+        <dex dex="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.0.0_d537d98ac97872b203a4699338a07ff1a18f5b3e/classes.dex" />
+    </item>
+    <item
+        jar="/home/brenohq/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.0.0_ac653da8d0a5ba088e1b53c16a2c7e87452a35b0/classes.dex" />
+    </item>
+    <item
+        jar="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="cc178928721f3222b3b06bdfbd9497378ccb9792">
+        <dex dex="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.0.0_5893c53c7b1fe6a89b626fb981e35df1d2c7b510/classes.dex" />
+    </item>
+    <item
+        jar="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
+        <dex dex="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.0.0_037cb050b55ffba321642fadf287a25fb8dacf4d/classes.dex" />
+    </item>
+    <item
+        jar="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="005786793d72c6deacbbbfd38177ed58e1aa6653">
+        <dex dex="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.0.0_1055b843671cb21172fb1bfcfa707c065c2fa2f2/classes.dex" />
+    </item>
+    <item
+        jar="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.0.0_ac047b9736f866ce2db6f2f9bf0d55d63a11a6a3/classes.dex" />
+    </item>
+    <item
+        jar="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="faaaaf46382fd6ce86501a21c86dd00f7ed19e9b">
+        <dex dex="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_062938ea4a316e9ed56e1c84ef5bacf6f2639fb6/classes.dex" />
+    </item>
+    <item
+        jar="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="1941832901fc4e7a93300b53762e9f65d7650b99">
+        <dex dex="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.0.0_64859476cf55fbd48c64859417f2a140dab11b79/classes.dex" />
+    </item>
+    <item
+        jar="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="1ec33e4f1711c56073687726fa7cbf43c0f97790">
+        <dex dex="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_72b1aa8369ad609f0f585bcfb17933a63dba9a4d/classes.dex" />
+    </item>
+    <item
+        jar="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.0_2df5ccf47391771ee0719ff022cb45d76661d52e/classes.dex" />
+    </item>
+
+</items>

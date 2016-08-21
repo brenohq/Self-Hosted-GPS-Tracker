@@ -1,2 +1,0 @@
-CHANGED,/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
-CHANGED,/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/fr/herverenault/selfhostedgpstracker/MyFirebaseMessagingService$override.class
