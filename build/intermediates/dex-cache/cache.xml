@@ -68,7 +68,7 @@
         jar="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="22.0.1"
-        sha1="faaaaf46382fd6ce86501a21c86dd00f7ed19e9b">
+        sha1="ec990e3aff10bd8667a38e0a75d9cebf256ecd65">
         <dex dex="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_062938ea4a316e9ed56e1c84ef5bacf6f2639fb6/classes.dex" />
     </item>
     <item
@@ -82,7 +82,7 @@
         jar="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="22.0.1"
-        sha1="1ec33e4f1711c56073687726fa7cbf43c0f97790">
+        sha1="88293a2ae9270ff5f717041e8392346563ef6e07">
         <dex dex="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_72b1aa8369ad609f0f585bcfb17933a63dba9a4d/classes.dex" />
     </item>
     <item
