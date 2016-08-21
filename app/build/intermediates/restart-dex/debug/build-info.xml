@@ -1,33 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="21"
-    density="xxhdpi"
+    abi="x86_64,x86"
+    api-level="22"
+    density="xhdpi"
     format="7"
-    timestamp="12847623878892"
+    timestamp="15967005666325"
     token="2732406494470509723" >
 
     <task
         name="javac"
-        duration="194" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="77" />
+        duration="0" />
     <task
         name="verifier"
-        duration="8" />
+        duration="0" />
 
-    <artifact
-        location="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
-
-    <build timestamp="12847623878892" >
+    <build timestamp="15947353668823" >
         <artifact
             location="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
+    <build timestamp="15967005666325" />
 
 </instant-run>

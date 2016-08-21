@@ -1,4 +1,4 @@
-package fr.herverenault.selfhostedgpstracker;
+package itracker.sd;
 
         import android.app.NotificationManager;
         import android.app.PendingIntent;

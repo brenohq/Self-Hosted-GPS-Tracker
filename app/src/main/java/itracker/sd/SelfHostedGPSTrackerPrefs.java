@@ -1,4 +1,4 @@
-package fr.herverenault.selfhostedgpstracker;
+package itracker.sd;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -8,7 +8,6 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
-import android.widget.Toast;
 
 import java.util.regex.Pattern;
 
@@ -16,7 +15,7 @@ public class SelfHostedGPSTrackerPrefs extends PreferenceActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.preferences);
+        addPreferencesFromResource(itracker.sd.R.xml.preferences);
 
         Preference pref;
 
@@ -30,19 +29,19 @@ public class SelfHostedGPSTrackerPrefs extends PreferenceActivity {
                 if (newValue == null
                         || newValue.toString().length() == 0
                         || !Pattern.matches("^\\d{1,5}$", newValue.toString())) {
-                    Alert(getString(R.string.invalid_number));
+                    Alert(getString(itracker.sd.R.string.invalid_number));
                     return false;
                 } else if (Integer.parseInt(newValue.toString()) > prefMaxRunTime * 3600) { // would not make sense...
-                    Alert(getString(R.string.pref_gps_updates_too_high));
+                    Alert(getString(itracker.sd.R.string.pref_gps_updates_too_high));
                     return false;
                 } else if (Integer.parseInt(newValue.toString()) < 5) {
-                    Alert(getString(R.string.pref_gps_updates_too_low));
+                    Alert(getString(itracker.sd.R.string.pref_gps_updates_too_low));
                     return false;
                 } else if (Integer.parseInt(newValue.toString()) < 30) {
-                    Alert(getString(R.string.pref_battery_drain));
+                    Alert(getString(itracker.sd.R.string.pref_battery_drain));
                 } else if (SelfHostedGPSTrackerService.isRunning
                         && Integer.parseInt(newValue.toString()) != oldValue) {
-                    Alert(getString(R.string.toast_prefs_restart));
+                    Alert(getString(itracker.sd.R.string.toast_prefs_restart));
                 }
                 return true;
             }
@@ -58,14 +57,14 @@ public class SelfHostedGPSTrackerPrefs extends PreferenceActivity {
                 if (newValue == null
                         || newValue.toString().length() == 0
                         || !Pattern.matches("^\\d{1,5}$", newValue.toString())) {
-                    Alert(getString(R.string.invalid_number));
+                    Alert(getString(itracker.sd.R.string.invalid_number));
                     return false;
                 } else if (Integer.parseInt(newValue.toString()) * 3600 < prefGpsUpdates) { // would not make sense...
-                    Alert(getString(R.string.pref_max_run_time_too_low));
+                    Alert(getString(itracker.sd.R.string.pref_max_run_time_too_low));
                     return false;
                 } else if (SelfHostedGPSTrackerService.isRunning
                         && Integer.parseInt(newValue.toString()) != oldValue) {
-                    Alert(getString(R.string.toast_prefs_restart));
+                    Alert(getString(itracker.sd.R.string.toast_prefs_restart));
                 }
                 return true;
             }
@@ -79,7 +78,7 @@ public class SelfHostedGPSTrackerPrefs extends PreferenceActivity {
                 boolean oldValue = preferences.getBoolean("pref_timestamp", false);
                 if (SelfHostedGPSTrackerService.isRunning
                         && (Boolean) newValue != oldValue) {
-                    Alert(getString(R.string.toast_prefs_restart));
+                    Alert(getString(itracker.sd.R.string.toast_prefs_restart));
                 }
                 return true;
             }

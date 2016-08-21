@@ -1,4 +1,4 @@
-package fr.herverenault.selfhostedgpstracker;
+package itracker.sd;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -64,18 +64,18 @@ public class SelfHostedGPSTrackerActivity extends Activity implements LocationLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_self_hosted_gpstracker);
+        setContentView(itracker.sd.R.layout.activity_self_hosted_gpstracker);
 
-        edit_url = (EditText)findViewById(R.id.edit_url);
-        text_gps_status = (TextView)findViewById(R.id.text_gps_status);
-        text_network_status = (TextView)findViewById(R.id.text_network_status);
-        button_toggle = (ToggleButton)findViewById(R.id.button_toggle);
-        text_running_since = (TextView)findViewById(R.id.text_running_since);
-        last_server_response = (TextView)findViewById(R.id.last_server_response);
+        edit_url = (EditText)findViewById(itracker.sd.R.id.edit_url);
+        text_gps_status = (TextView)findViewById(itracker.sd.R.id.text_gps_status);
+        text_network_status = (TextView)findViewById(itracker.sd.R.id.text_network_status);
+        button_toggle = (ToggleButton)findViewById(itracker.sd.R.id.button_toggle);
+        text_running_since = (TextView)findViewById(itracker.sd.R.id.text_running_since);
+        last_server_response = (TextView)findViewById(itracker.sd.R.id.last_server_response);
 
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
         if (preferences.contains("URL") && ! preferences.getString("URL", "").equals("")) {
-            edit_url.setText(preferences.getString("URL", getString(R.string.hint_url)));
+            edit_url.setText(preferences.getString("URL", getString(itracker.sd.R.string.hint_url)));
             edit_url.clearFocus();
         } else {
             edit_url.requestFocus();
@@ -144,7 +144,7 @@ public class SelfHostedGPSTrackerActivity extends Activity implements LocationLi
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_self_hosted_gpstracker, menu);
+        getMenuInflater().inflate(itracker.sd.R.menu.activity_self_hosted_gpstracker, menu);
         return true;
     }
 
@@ -152,7 +152,7 @@ public class SelfHostedGPSTrackerActivity extends Activity implements LocationLi
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent i;
         switch (item.getItemId()) {
-        case R.id.menu_settings:
+        case itracker.sd.R.id.menu_settings:
             i = new Intent(this, SelfHostedGPSTrackerPrefs.class);
             startActivity(i);
             break;
@@ -180,13 +180,13 @@ public class SelfHostedGPSTrackerActivity extends Activity implements LocationLi
 
     @Override
     public void onProviderDisabled(String provider) {
-        text_gps_status.setText(getString(R.string.text_gps_status_disabled));
+        text_gps_status.setText(getString(itracker.sd.R.string.text_gps_status_disabled));
         text_gps_status.setTextColor(Color.RED);
     }
 
     @Override
     public void onProviderEnabled(String provider) {
-        text_gps_status.setText(getString(R.string.text_gps_status_enabled));
+        text_gps_status.setText(getString(itracker.sd.R.string.text_gps_status_enabled));
         text_gps_status.setTextColor(Color.BLACK);
     }
 
@@ -198,20 +198,20 @@ public class SelfHostedGPSTrackerActivity extends Activity implements LocationLi
     private void updateServiceStatus() {
 
         if (SelfHostedGPSTrackerService.isRunning) {
-            Toast.makeText(this, getString(R.string.toast_service_running), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(itracker.sd.R.string.toast_service_running), Toast.LENGTH_SHORT).show();
             button_toggle.setChecked(true);
-            text_running_since.setText(getString(R.string.text_running_since) + " "
+            text_running_since.setText(getString(itracker.sd.R.string.text_running_since) + " "
                     + DateFormat.getDateTimeInstance().format(SelfHostedGPSTrackerService.runningSince.getTime()));
         } else {
-            Toast.makeText(this, getString(R.string.toast_service_stopped), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(itracker.sd.R.string.toast_service_stopped), Toast.LENGTH_SHORT).show();
             button_toggle.setChecked(false);
             if (preferences.contains("stoppedOn")) {
                 long stoppedOn = preferences.getLong("stoppedOn", 0);
                 if (stoppedOn > 0) {
-                    text_running_since.setText(getString(R.string.text_stopped_on) + " "
+                    text_running_since.setText(getString(itracker.sd.R.string.text_stopped_on) + " "
                             + DateFormat.getDateTimeInstance().format(new Date(stoppedOn)));
                 } else {
-                    text_running_since.setText(getText(R.string.text_killed));
+                    text_running_since.setText(getText(itracker.sd.R.string.text_killed));
                 }
             }
         }
@@ -220,10 +220,10 @@ public class SelfHostedGPSTrackerActivity extends Activity implements LocationLi
     private void updateNetworkStatus() {
         NetworkInfo activeNetwork = connectivityManager.getActiveNetworkInfo();
         if (activeNetwork != null && activeNetwork.isConnectedOrConnecting()) {
-            text_network_status.setText(getString(R.string.text_network_status_enabled));
+            text_network_status.setText(getString(itracker.sd.R.string.text_network_status_enabled));
             text_network_status.setTextColor(Color.BLACK);
         } else {
-            text_network_status.setText(getString(R.string.text_network_status_disabled));
+            text_network_status.setText(getString(itracker.sd.R.string.text_network_status_disabled));
             text_network_status.setTextColor(Color.RED);
         }
     }

@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:2:1-51:12
+ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:2:1-44:12
 	package
-		ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:3:5-26
 		INJECTED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml
 		INJECTED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -104,7 +104,7 @@ ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/m
 	android:name
 		ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:14:22-76
 application
-ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:16:5-49:19
+ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:16:5-42:19
 MERGED from [com.google.firebase:firebase-messaging:9.0.0] /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.0.0/AndroidManifest.xml:20:5-32:19
 MERGED from [com.google.android.gms:play-services-basement:9.0.0] /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.0/AndroidManifest.xml:20:5-24:19
 MERGED from [com.android.support:support-v4:23.0.0] /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
@@ -171,14 +171,14 @@ MERGED from [com.android.support:support-v4:23.0.0] /home/brenohq/AndroidStudioP
 		ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:18:9-45
 	android:theme
 		ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:20:9-40
-activity#fr.herverenault.selfhostedgpstracker.SelfHostedGPSTrackerActivity
+activity#itracker.sd.SelfHostedGPSTrackerActivity
 ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:21:9-31:20
 	android:label
 		ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:23:13-45
 	android:launchMode
 		ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:24:13-44
 	android:name
-		ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:22:13-93
+		ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:22:13-57
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER+com.google.firebase.MESSAGING_EVENT
 ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:25:13-30:29
 action#android.intent.action.MAIN
@@ -193,30 +193,20 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:29:17-77
 	android:name
 		ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:29:27-74
-service#fr.herverenault.selfhostedgpstracker.SelfHostedGPSTrackerService
-ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:32:9-100
+service#itracker.sd.SelfHostedGPSTrackerService
+ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:32:9-64
 	android:name
-		ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:32:18-97
-service#fr.herverenault.selfhostedgpstracker.MyFirebaseMessagingService
+		ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:32:18-61
+service#itracker.sd.MyFirebaseMessagingService
 ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:34:9-39:19
 	android:name
 		ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:35:13-55
 intent-filter#com.google.firebase.MESSAGING_EVENT
 ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:36:13-38:29
-service#fr.herverenault.selfhostedgpstracker.MyFirebaseInstanceIDService
-ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:41:9-46:19
+activity#itracker.sd.SelfHostedGPSTrackerPrefs
+ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:41:9-62
 	android:name
-		ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:42:13-56
-intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:43:13-45:29
-action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:44:17-79
-	android:name
-		ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:44:25-77
-activity#fr.herverenault.selfhostedgpstracker.SelfHostedGPSTrackerPrefs
-ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:48:9-62
-	android:name
-		ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:48:19-59
+		ADDED from /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/src/main/AndroidManifest.xml:41:19-59
 service#com.google.firebase.messaging.FirebaseMessagingService
 ADDED from [com.google.firebase:firebase-messaging:9.0.0] /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.0.0/AndroidManifest.xml:24:9-30:19
 	android:exported
@@ -306,6 +296,14 @@ MERGED from [com.google.firebase:firebase-iid:9.0.0] /home/brenohq/AndroidStudio
 		ADDED from [com.google.firebase:firebase-iid:9.0.0] /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.0/AndroidManifest.xml:53:13-36
 	android:name
 		ADDED from [com.google.firebase:firebase-iid:9.0.0] /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.0/AndroidManifest.xml:52:13-77
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:9.0.0] /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.0/AndroidManifest.xml:54:13-56:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:9.0.0] /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.0/AndroidManifest.xml:54:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:9.0.0] /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.0/AndroidManifest.xml:55:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.0] /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.0/AndroidManifest.xml:55:25-77
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:9.0.0] /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.0/AndroidManifest.xml:7:9-11:39
 MERGED from [com.google.firebase:firebase-common:9.0.0] /home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.0/AndroidManifest.xml:7:9-11:39

@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package fr.herverenault.selfhostedgpstracker;
+package itracker.sd;
 
 public final class Manifest {
     public static final class permission {

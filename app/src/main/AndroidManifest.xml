@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="fr.herverenault.selfhostedgpstracker"
+    package="itracker.sd"
 
     android:versionCode="12"
     android:versionName="1.7" >
@@ -19,7 +19,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="fr.herverenault.selfhostedgpstracker.SelfHostedGPSTrackerActivity"
+            android:name=".SelfHostedGPSTrackerActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask">
             <intent-filter>
@@ -29,19 +29,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name="fr.herverenault.selfhostedgpstracker.SelfHostedGPSTrackerService" />
+        <service android:name=".SelfHostedGPSTrackerService" />
 
         <service
             android:name=".MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
-            </intent-filter>
-        </service>
-
-        <service
-            android:name=".MyFirebaseInstanceIDService">
-            <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
             </intent-filter>
         </service>
 

@@ -1,4 +1,4 @@
-package fr.herverenault.selfhostedgpstracker;
+package itracker.sd;
 
 import android.app.IntentService;
 import android.app.Notification;
@@ -9,7 +9,6 @@ import android.content.SharedPreferences;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
@@ -27,7 +26,7 @@ import javax.net.ssl.SSLHandshakeException;
 
 public class SelfHostedGPSTrackerService extends IntentService implements LocationListener {
 
-    public static final String NOTIFICATION = "fr.herverenault.selfhostedgpstracker";
+    public static final String NOTIFICATION = "itracker.sd";
 
     public static boolean isRunning;
     public static Calendar runningSince;
@@ -77,7 +76,7 @@ public class SelfHostedGPSTrackerService extends IntentService implements Locati
 
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, pref_gps_updates * 1000, 1, this);
 
-        lastServerResponse = getResources().getString(R.string.waiting_for_gps_data);
+        lastServerResponse = getResources().getString(itracker.sd.R.string.waiting_for_gps_data);
         Intent notifIntent = new Intent(NOTIFICATION);
         notifIntent.putExtra(NOTIFICATION, "START");
         sendBroadcast(notifIntent);
@@ -94,11 +93,11 @@ public class SelfHostedGPSTrackerService extends IntentService implements Locati
         Intent notifIntent = new Intent(NOTIFICATION);
         sendBroadcast(notifIntent);
 
-        Notification notification = new Notification(R.drawable.ic_notif, getText(R.string.toast_service_running), System.currentTimeMillis());
+        Notification notification = new Notification(itracker.sd.R.drawable.ic_notif, getText(itracker.sd.R.string.toast_service_running), System.currentTimeMillis());
         Intent notificationIntent = new Intent(this, SelfHostedGPSTrackerActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
-        notification.setLatestEventInfo(this, getText(R.string.app_name), getText(R.string.toast_service_running), pendingIntent);
-        startForeground(R.id.logo, notification);
+        notification.setLatestEventInfo(this, getText(itracker.sd.R.string.app_name), getText(itracker.sd.R.string.toast_service_running), pendingIntent);
+        startForeground(itracker.sd.R.id.logo, notification);
 
         long endTime = System.currentTimeMillis() + pref_max_run_time*60*60*1000;
         while (System.currentTimeMillis() < endTime) {
@@ -183,16 +182,16 @@ public class SelfHostedGPSTrackerService extends IntentService implements Locati
                 message = "HTTP " + code;
             }
             catch (MalformedURLException e) {
-                message = getResources().getString(R.string.error_malformed_url);
+                message = getResources().getString(itracker.sd.R.string.error_malformed_url);
             }
             catch (UnknownHostException e) {
-                message = getResources().getString(R.string.error_unknown_host);
+                message = getResources().getString(itracker.sd.R.string.error_unknown_host);
             }
             catch (SSLHandshakeException e) {
-                message = getResources().getString(R.string.error_ssl);
+                message = getResources().getString(itracker.sd.R.string.error_ssl);
             }
             catch (SocketTimeoutException e) {
-                message = getResources().getString(R.string.error_timeout);
+                message = getResources().getString(itracker.sd.R.string.error_timeout);
             }
             catch (Exception e) {
                 Log.d(MY_TAG, "HTTP request failed: " + e);
@@ -203,18 +202,18 @@ public class SelfHostedGPSTrackerService extends IntentService implements Locati
             }
 
             if ( ! params.startsWith("tracker=")) {
-                lastServerResponse = getResources().getString(R.string.last_location_sent_at)
+                lastServerResponse = getResources().getString(itracker.sd.R.string.last_location_sent_at)
                         + " "
                         + DateFormat.getTimeInstance().format(new Date())
                         + " ";
 
                 if (code == 200) {
                     lastServerResponse += "<font color='#00aa00'><b>"
-                            + getResources().getString(R.string.http_request_ok)
+                            + getResources().getString(itracker.sd.R.string.http_request_ok)
                             + "</b></font>";
                 } else {
                     lastServerResponse += "<font color='#ff0000'><b>"
-                            + getResources().getString(R.string.http_request_failed)
+                            + getResources().getString(itracker.sd.R.string.http_request_failed)
                             + "</b></font>"
                             + "<br>"
                             + "(" + message + ")";

@@ -1,7 +1,7 @@
 /**
  * Automatically generated file. DO NOT MODIFY
  */
-package fr.herverenault.selfhostedgpstracker;
+package itracker.sd;
 
 public final class BuildConfig {
   public static final boolean DEBUG = Boolean.parseBoolean("true");
