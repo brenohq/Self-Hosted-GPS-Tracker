@@ -12,11 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9e1f1c7-7643-40f8-84c0-90c99df7d928" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/buildId.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/how-it-works.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ic_launcher-web.xcf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/icon2.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
@@ -34,7 +29,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-tvdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-tvdpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/reload-changes.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/reload-changes.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
@@ -57,12 +52,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SelfHostedGPSTrackerActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SelfHostedGPSTrackerActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/itracker/sd/SelfHostedGPSTrackerActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="225" column="61" selection-start-line="225" selection-start-column="61" selection-end-line="225" selection-end-column="61" />
+            <state vertical-scroll-proportion="3.3502538">
+              <caret line="166" column="32" selection-start-line="166" selection-start-column="32" selection-end-line="166" selection-end-column="32" />
               <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1469#2092#0" expanded="true" />
+                <element signature="e#2091#2092#0" expanded="true" />
                 <element signature="e#3029#3069#0" expanded="true" />
                 <element signature="e#6302#6358#0" expanded="true" />
                 <element signature="e#6516#6571#0" expanded="true" />
@@ -72,16 +70,17 @@
                 <element signature="e#7636#7683#0" expanded="true" />
                 <element signature="e#7855#7896#0" expanded="true" />
                 <element signature="e#8189#8248#0" expanded="true" />
+                <element signature="e#8367#8427#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyFirebaseMessagingService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyFirebaseMessagingService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/itracker/sd/MyFirebaseMessagingService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34109816">
-              <caret line="23" column="94" selection-start-line="23" selection-start-column="94" selection-end-line="23" selection-end-column="94" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -1891,11 +1890,11 @@
         <option value="$PROJECT_DIR$/server-side/gps.php" />
         <option value="$PROJECT_DIR$/server-side/i-am-here.html" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/itracker/sd/SelfHostedGPSTrackerActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/itracker/sd/SelfHostedGPSTrackerPrefs.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/itracker/sd/SelfHostedGPSTrackerService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/itracker/sd/MyFirebaseInstanceIDService.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/itracker/sd/SelfHostedGPSTrackerActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/itracker/sd/MyFirebaseMessagingService.java" />
       </list>
     </option>
@@ -2028,7 +2027,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="device.picker.selection" value="LGD805cc18558c" />
+    <property name="device.picker.selection" value="Nexus_4_API_22" />
   </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -2316,7 +2315,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32961783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2364,6 +2363,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1469#2092#0" expanded="true" />
+            <element signature="e#2091#2092#0" expanded="true" />
             <element signature="e#3029#3069#0" expanded="true" />
             <element signature="e#6302#6358#0" expanded="true" />
             <element signature="e#6516#6571#0" expanded="true" />
@@ -2373,6 +2375,7 @@
             <element signature="e#7636#7683#0" expanded="true" />
             <element signature="e#7855#7896#0" expanded="true" />
             <element signature="e#8189#8248#0" expanded="true" />
+            <element signature="e#8367#8427#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2400,6 +2403,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1469#2092#0" expanded="true" />
+            <element signature="e#2091#2092#0" expanded="true" />
             <element signature="e#3029#3069#0" expanded="true" />
             <element signature="e#6302#6358#0" expanded="true" />
             <element signature="e#6516#6571#0" expanded="true" />
@@ -2409,6 +2415,7 @@
             <element signature="e#7636#7683#0" expanded="true" />
             <element signature="e#7855#7896#0" expanded="true" />
             <element signature="e#8189#8248#0" expanded="true" />
+            <element signature="e#8367#8427#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2443,6 +2450,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1469#2092#0" expanded="true" />
+            <element signature="e#2091#2092#0" expanded="true" />
             <element signature="e#3029#3069#0" expanded="true" />
             <element signature="e#6302#6358#0" expanded="true" />
             <element signature="e#6516#6571#0" expanded="true" />
@@ -2452,6 +2462,7 @@
             <element signature="e#7636#7683#0" expanded="true" />
             <element signature="e#7855#7896#0" expanded="true" />
             <element signature="e#8189#8248#0" expanded="true" />
+            <element signature="e#8367#8427#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2616,11 +2627,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/itracker/sd/SelfHostedGPSTrackerActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/itracker/sd/MyFirebaseMessagingService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="225" column="61" selection-start-line="225" selection-start-column="61" selection-end-line="225" selection-end-column="61" />
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/itracker/sd/SelfHostedGPSTrackerActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.3502538">
+          <caret line="166" column="32" selection-start-line="166" selection-start-column="32" selection-end-line="166" selection-end-column="32" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1469#2092#0" expanded="true" />
+            <element signature="e#2091#2092#0" expanded="true" />
             <element signature="e#3029#3069#0" expanded="true" />
             <element signature="e#6302#6358#0" expanded="true" />
             <element signature="e#6516#6571#0" expanded="true" />
@@ -2630,15 +2652,8 @@
             <element signature="e#7636#7683#0" expanded="true" />
             <element signature="e#7855#7896#0" expanded="true" />
             <element signature="e#8189#8248#0" expanded="true" />
+            <element signature="e#8367#8427#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/itracker/sd/MyFirebaseMessagingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34109816">
-          <caret line="23" column="94" selection-start-line="23" selection-start-column="94" selection-end-line="23" selection-end-column="94" />
-          <folding />
         </state>
       </provider>
     </entry>
