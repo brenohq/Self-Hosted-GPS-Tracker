@@ -118,9 +118,7 @@ public class SelfHostedGPSTrackerActivity extends Activity implements LocationLi
         }
 
         updateNetworkStatus();
-
         updateServiceStatus();
-
         updateServerResponse();
 
         if (SelfHostedGPSTrackerService.isRunning) {
@@ -161,6 +159,9 @@ public class SelfHostedGPSTrackerActivity extends Activity implements LocationLi
         return super.onOptionsItemSelected(item);
     }
 
+
+    // Método invocado quando botão rastrear é clicado
+
     public void onToggleClicked(View view) {
         Intent intent = new Intent(this, SelfHostedGPSTrackerService.class);
         if (((ToggleButton) view).isChecked()) {
@@ -172,18 +173,20 @@ public class SelfHostedGPSTrackerActivity extends Activity implements LocationLi
         }
     }
 
-    /* -------------- GPS stuff -------------- */
+    /* ---------------- GPS ---------------- */
 
     @Override
     public void onLocationChanged(Location location) {
     }
 
+    // Desliga sensor GPS
     @Override
     public void onProviderDisabled(String provider) {
         text_gps_status.setText(getString(itracker.sd.R.string.text_gps_status_disabled));
         text_gps_status.setTextColor(Color.RED);
     }
 
+    // Liga sensor GPS
     @Override
     public void onProviderEnabled(String provider) {
         text_gps_status.setText(getString(itracker.sd.R.string.text_gps_status_enabled));
@@ -194,7 +197,7 @@ public class SelfHostedGPSTrackerActivity extends Activity implements LocationLi
     public void onStatusChanged(String provider, int status, Bundle extras) {
     }
 
-    /* ----------- utility methods -------------- */
+    /* ----------- Atualizações GPS -------------- */
     private void updateServiceStatus() {
 
         if (SelfHostedGPSTrackerService.isRunning) {
@@ -217,6 +220,8 @@ public class SelfHostedGPSTrackerActivity extends Activity implements LocationLi
         }
     }
 
+
+    // STATUS DA REDE
     private void updateNetworkStatus() {
         NetworkInfo activeNetwork = connectivityManager.getActiveNetworkInfo();
         if (activeNetwork != null && activeNetwork.isConnectedOrConnecting()) {

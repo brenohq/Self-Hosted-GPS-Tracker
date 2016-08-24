@@ -51,7 +51,7 @@ public class SelfHostedGPSTrackerService extends IntentService implements Locati
     @Override
     public void onCreate() {
         super.onCreate();
-        Log.d(MY_TAG, "in onCreate, init GPS stuff");
+        Log.d(MY_TAG, "Quando cria, inicia as coisas do GPS");
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
@@ -64,8 +64,8 @@ public class SelfHostedGPSTrackerService extends IntentService implements Locati
         SharedPreferences.Editor editor = preferences.edit();
         editor.putLong("stoppedOn", 0);
         editor.commit();
-        pref_gps_updates = Integer.parseInt(preferences.getString("pref_gps_updates", "30")); // seconds
-        pref_max_run_time = Integer.parseInt(preferences.getString("pref_max_run_time", "24")); // hours
+        pref_gps_updates = Integer.parseInt(preferences.getString("pref_gps_updates", "30")); // segundos
+        pref_max_run_time = Integer.parseInt(preferences.getString("pref_max_run_time", "24")); // horas
         pref_timestamp = preferences.getBoolean("pref_timestamp", false);
         urlText = preferences.getString("URL", "");
         if (urlText.contains("?")) {
@@ -111,7 +111,7 @@ public class SelfHostedGPSTrackerService extends IntentService implements Locati
     @Override
     public void onDestroy() {
         // (user clicked the stop button, or max run time has been reached)
-        Log.d(MY_TAG, "in onDestroy, stop listening to the GPS");
+        Log.d(MY_TAG, "quando se encerra, para de escutar o GPS");
         new SelfHostedGPSTrackerRequest().start("tracker=stop");
 
         locationManager.removeUpdates(this);
@@ -127,11 +127,12 @@ public class SelfHostedGPSTrackerService extends IntentService implements Locati
         sendBroadcast(notifIntent);
     }
 
-    /* -------------- GPS stuff -------------- */
+    /* -------------- Sensor GPS -------------- */
 
+    // Metodo chamado sempre que a localização é alterada
     @Override
     public void onLocationChanged(Location location) {
-        Log.d(MY_TAG, "in onLocationChanged, latestUpdate == " + latestUpdate);
+        Log.d(MY_TAG, "onLocationChanged, Ultimo recebimento == " + latestUpdate);
         long currentTime = System.currentTimeMillis();
 
         // Tolerate devices which sometimes send GPS updates 1 second too early,
@@ -142,6 +143,8 @@ public class SelfHostedGPSTrackerService extends IntentService implements Locati
 
         latestUpdate = currentTime;
 
+
+        // Prepara uma requisição
         new SelfHostedGPSTrackerRequest().start(
                 "lat=" + location.getLatitude()
                         + "&lon=" + location.getLongitude()
@@ -161,10 +164,14 @@ public class SelfHostedGPSTrackerService extends IntentService implements Locati
     public void onStatusChanged(String provider, int status, Bundle extras) {
     }
 
+
+    // Classe da requisição que é feita para o servidor
+
     private class SelfHostedGPSTrackerRequest extends Thread {
         private final static String MY_TAG = "SelfHostedGPSTrackerReq";
         private String params;
 
+        // HttpURLConnection para de fato fazer a requisição
         public void run() {
             String message;
             int code = 0;
@@ -172,15 +179,17 @@ public class SelfHostedGPSTrackerService extends IntentService implements Locati
             try {
                 URL url = new URL(urlText + params);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-                conn.setReadTimeout(10000 /* milliseconds */);
-                conn.setConnectTimeout(15000 /* milliseconds */);
+                conn.setReadTimeout(10000 /* milisegundos */);
+                conn.setConnectTimeout(15000 /* milisegundos */);
                 conn.setRequestMethod("GET");
                 conn.setDoInput(true);
                 conn.connect();
                 code = conn.getResponseCode();
-                Log.d(MY_TAG, "HTTP request done: " + code);
+                Log.d(MY_TAG, "HTTP request feita: " + code);
                 message = "HTTP " + code;
             }
+
+            // Trata possíveis erros HTTP
             catch (MalformedURLException e) {
                 message = getResources().getString(itracker.sd.R.string.error_malformed_url);
             }
@@ -194,7 +203,7 @@ public class SelfHostedGPSTrackerService extends IntentService implements Locati
                 message = getResources().getString(itracker.sd.R.string.error_timeout);
             }
             catch (Exception e) {
-                Log.d(MY_TAG, "HTTP request failed: " + e);
+                Log.d(MY_TAG, "HTTP request falhou: " + e);
                 message = e.getLocalizedMessage();
                 if (message == null) {
                     message = e.toString();
