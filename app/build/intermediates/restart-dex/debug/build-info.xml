@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86_64,x86"
+    abi="x86_64"
     api-level="22"
     density="xhdpi"
     format="7"
-    timestamp="24744735960411"
-    token="2732406494470509723"
-    verifier="METHOD_DELETED" >
+    timestamp="450952194908"
+    token="2732406494470509723" >
 
     <task
         name="javac"
-        duration="190" />
+        duration="5125" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="28" />
+        duration="457" />
     <task
         name="verifier"
-        duration="33" />
+        duration="10" />
 
     <artifact
-        location="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
-        type="DEX" />
+        location="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="23716643835457" >
+    <build timestamp="450952194908" >
         <artifact
             location="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="24744735960411"
-        verifier="METHOD_DELETED" >
-        <artifact
-            location="/home/brenohq/AndroidStudioProjects/Self-Hosted-GPS-Tracker/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>
