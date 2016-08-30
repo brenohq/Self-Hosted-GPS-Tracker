@@ -16,7 +16,7 @@ This app is NOT meant to be a stealth tracker, or to be forced upon a user. So, 
 ##Demo
 
 I put a demo on http://brenohq.com/server/i-am-here.html
-To see your position on this page, enter http://brenohq.com/gps.php in the app on your phone (or tablet). It's an anonymous URL, so if you're not the only one doing it, you may see the location of another anonymous user.
+To see your position on this page, enter http://brenohq.com/server/gps.php in the app on your phone (or tablet). It's an anonymous URL, so if you're not the only one doing it, you may see the location of another anonymous user.
 
 Side-note: There are plenty of apps which do the same, for example Open GPS Tracker. But I wanted an app
 * which sends my position to my server, and only my server
